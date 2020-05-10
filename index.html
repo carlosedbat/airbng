@@ -23,16 +23,16 @@
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand">Navbar</a>
+                    <a class="navbar-brand">Escolha seu destino</a>
                     <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                        <input class="form-control" id="myFilter" type="text" placeholder="Digite o tipo de lugar"
+                            onkeyup="renderCards()">
                     </form>
                 </nav>
             </div>
         </div>
     </div>
-    <div class="container" id="mapa">
+    <div class="container" id="map">
         <div class="row">
             <div class="col-md-12">mapa</div>
         </div>
@@ -48,25 +48,29 @@
         </div>
     </div>
     <div class="container">
-        <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item "><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-          
-    </div>
-    <div class="container">
         <div class="row" id="rodape">
-            <div class="col-md-4">feito a base de cafe e JS</div>
-            <div class="col-md-4">Carlos Eduardo Batista</div>
-            <div class="col-md-4">redes sociais</div>
+            <div class="col-md-4">made with
+                <img src="./assets/cafe.png" alt="cafe" class="imgLogo">
+                and
+                <img src="./assets/javascript.png" alt="" class="imgLogo">
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/Copyright.png" alt="" class="imgLogo2"> Carlos Eduardo Batista</div>
+            <div class="col-md-4">
+                <img src="./assets/facebook.png" alt="" class="redeSocial">
+                <img src="./assets/github.png" alt="" class="redeSocial">
+                <img src="./assets/linkedin.png" alt="" class="redeSocial">
+                <img src="./assets/whatsapp.png" alt="" class="redeSocial">
+            </div>
         </div>
     </div>
 
 
 
+
+
+
+    <script src="./nf.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
@@ -92,6 +96,9 @@
     <script>
         var $jq = jQuery.noConflict();
     </script>
+    <script src="./mapa.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwHWhiTH_RXWdLkVG-ED9krVPTPxlgLVo&callback=initMap"
+        async defer></script>
 </body>
 
 </html>

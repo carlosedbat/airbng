@@ -13,6 +13,32 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.imgLogo{
+    width: 20px;
+    height: 20px;
+    padding-bottom: 5px;
+}
+.imgLogo2{
+    width: 20px;
+    height: 20px;
+}
+.redeSocial{
+    width: 30px;
+    height: 30px;
+}
 .card{
     margin: 10px;
 }
+
+   /* Always set the map height explicitly to define the size of the div
+           * element that contains the map. */
+           #map {
+            height: 50%;
+            width: 80%;
+          }
+          /* Optional: Makes the sample page fill the window. */
+          html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
