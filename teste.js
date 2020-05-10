@@ -145,6 +145,14 @@ dados = [
     }
 ]
 
+function calCheckin (){
+var dataEntrada = document.getElementById("dataEntrada").value;
+var dataSaida = document.getElementById("dataSaida").value;
+var checkin = Date.parse(dataSaida) -Date.parse(dataEntrada);
+console.log(checkin);
+
+}
+
 i = 0;
 while(i<25){
     //criando a div card

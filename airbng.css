@@ -5,13 +5,15 @@
     margin-bottom: 10px;
     margin-left: 10px;
 }
+input{
+    margin-left: 10px;
+    margin-top: 10px;
+}
 #teste{
     display: flex;
     align-content: space-between;
     flex-wrap: wrap;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: 10%;
 }
 .imgLogo{
     width: 20px;
